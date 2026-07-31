@@ -1,0 +1,49 @@
+name: Feature request
+description: Suggest a practical improvement to TMOG.
+title: "[Feature]: "
+labels:
+  - enhancement
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tell us about the workflow this would improve. Describing the problem is more useful than prescribing an implementation.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Both macOS and Windows
+        - macOS
+        - Windows
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the task, limitation, or repeated frustration.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed experience
+      description: Explain how you would expect the feature to behave.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Current alternatives
+      description: How do you handle this today, if at all?
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched for an existing request for this feature.
+          required: true
+        - label: I removed secrets and unnecessary personal information from this public request.
+          required: true
